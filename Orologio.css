@@ -4,11 +4,12 @@
 
 body {
     background-color: #252525;
-    color: white;
+    color: #FAFDFF;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 600px;
+    flex-direction: column;
 }
 
 .container { /* CONTENUTO */
@@ -18,6 +19,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 
@@ -25,26 +27,42 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 80px;
+    padding: 30px 50px;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: #252525;
     border-radius: 12px;
     border: 3px solid #FAFDFF;
+    text-align: center;
 }
 
-
-.clock {   /* STILE OROLOGIO */
-    font-size: 40px;
+#clock {   /* STILE OROLOGIO */
+    font-size: 60px;
     font-weight: bold;
 }
+    
+
+
+#hours, #minutes, #seconds {
+  display: inline-block;
+  padding: 5px;
+  letter-spacing: 7px;
+}
+
+
 
 .footer {
-position:absolute;
+position:fixed;
 bottom:0;
 left:0;
 width:100%;
 text-align: center;
+display: flex;
+justify-content: center;
+padding: 1em;
 }
+
+
+
 
  
