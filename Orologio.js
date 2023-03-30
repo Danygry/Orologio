@@ -1,35 +1,25 @@
-function showTime() {
-    let date = new Date();
-    let h = date.getHours(); // 0 - 23
-    let m = date.getMinutes(); // 0 - 59
-    let s = date.getSeconds(); // 0 - 59
-    let session = "AM";
-    let day = date.getDay();
-
-    if (h == 0) {
-        h = 12;
-    }
-
-    if (h > 12) {
-        h = h - 12;
-        session = "PM";
-    }
-
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
-    s = (s < 10) ? "0" + s : s;
-
-    let time = h + " : " + m + " : " + s + " " + session;
-    document.getElementById("clockDisplay").innerText = time;
-    document.getElementById("clockDisplay").textContent = time;
-
-    setTimeout(showTime, 1000);
-
-}
-showTime();
+function updateClock() {
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    var seconds= currentTime.getSeconds();
+    
+    
+    hours = (hours < 10 ? "0" : "") + hours;
+    minutes = (minutes < 10 ? "0" : "") + minutes;
+    seconds = (seconds < 10 ? "0" : "") + seconds;
+    
+    document.getElementById("hours").innerHTML = hours + ":";
+    
+    document.getElementById("minutes").innerHTML = minutes + ":";
+    
+    document.getElementById("seconds").innerHTML = seconds;
+    
+  }
+  
+  setInterval(updateClock, 1000);
 
 
-
-//year footer
+//ANNO FOOTER
 const year = document.getElementById("year");
 year.textContent = new Date().getFullYear();
