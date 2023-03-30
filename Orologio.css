@@ -52,14 +52,12 @@ body {
 
 
 .footer {
-position:fixed;
-bottom:0;
-left:0;
-width:100%;
+position: absolute;
 text-align: center;
 display: flex;
 justify-content: center;
 padding: 1em;
+margin-top: 900px;
 }
 
 
