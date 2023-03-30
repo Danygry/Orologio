@@ -5,7 +5,7 @@
     <!-- META TAGS -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="Orologio.css">
+    <link rel="stylesheet" type="text/css" href="Orologio.css"> <!--PERCORSO CSS-->
     <!-- Font Awesome Icons  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
@@ -21,17 +21,20 @@
 
 <body>
     <div class="container">
-        <div class="card">
-            <h1 id="day">Ora Attuale</h1>
-            <div id="clockDisplay" class="clock" onload="showTime()"></div>
+        <div class="card"> <!--RIQUADRO-->
+            <h1 id="day">ORA ATTUALE
+            <div id="clock"></div> <!--ORE, MINUTI, SECONDI-->
+                <div id="hours"></div>
+                <div id="minutes"></div>
+                <div id="seconds"></div>
         </div>
-        <div class="container">
+        
+       <div class="container">
             <div class="footer">&copy
               <span id="year"></span>
               Ora Attuale - All rights reserved
             </footer>
     </div>
-    <script src="Orologio.js"></script>
-</body>
-
+    <script src="Orologio.js"></script> <!--PERCORSO JAVASCRIPT-->
+  </body>
 </html>
